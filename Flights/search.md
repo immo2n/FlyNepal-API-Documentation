@@ -5,7 +5,7 @@ POST: /flights/search
 
 ### Payload
 - token is a way to verify the request is coming from the app not something else. You will get one from the backend server.
-Single journey ticket
+- Single journey ticket
 ```
 {
   "token": "TEST_TOKEN",
