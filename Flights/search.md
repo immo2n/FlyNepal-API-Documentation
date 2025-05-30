@@ -1,6 +1,6 @@
 ### Response of the search api for a flight from KTM to NYC
 
-"""
+```
 {
   "offers": [
     {
@@ -25,4 +25,4 @@
     }
   ]
 }
-"""
+```
