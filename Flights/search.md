@@ -1,12 +1,14 @@
 ### Endpoint
 ```
-POST: flights/search
+POST: /flights/search
 ```
 
 ### Payload
+- token is a way to verify the request is coming from the app not something else. You will get one from the backend server.
 Single journey ticket
 ```
 {
+  "token": "TEST_TOKEN",
   "origin": "KTM",
   "destination": "NYC",
   "departure_date": "2025-06-05",
@@ -22,6 +24,7 @@ Single journey ticket
 With return ticket*
 ```
 {
+  "token": "TEST_TOKEN",
   "origin": "KTM",
   "destination": "NYC",
   "departure_date": "2025-06-05",
