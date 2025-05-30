@@ -1,6 +1,6 @@
 ### Endpoint
 ```
-POST: flights/search
+POST: /flights/search
 ```
 
 ### Payload
