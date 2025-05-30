@@ -4,6 +4,22 @@ POST: flights/search
 ```
 
 ### Payload
+```
+{
+  "origin": "KTM",
+  "destination": "NYC",
+  "departure_date": "2025-06-05",
+  "return_flight": true,
+  "return_date":  "2025-07-05",
+  "cabin_class": "business",
+  "passengers": [
+    {
+        "age": 20
+    }
+  ],
+  "max_connections": 0
+}
+```
 #### 🔁 1. `return_flight` (optional, default: `false`)
 - Type: `boolean`
 - If set to `true`, the return trip is also included.
@@ -38,22 +54,6 @@ POST: flights/search
   - `0` = Direct flights only
   - `1` = One connection
   - `2` = Up to two connections
-```
-{
-  "origin": "KTM",
-  "destination": "NYC",
-  "departure_date": "2025-06-05",
-  "return_flight": true,
-  "return_date":  "2025-07-05",
-  "cabin_class": "business",
-  "passengers": [
-    {
-        "age": 20
-    }
-  ],
-  "max_connections": 0
-}
-```
 
 ### Response of the search api for a flight from KTM to NYC
 ```
