@@ -4,6 +4,22 @@ POST: flights/search
 ```
 
 ### Payload
+Single journey ticket
+```
+{
+  "origin": "KTM",
+  "destination": "NYC",
+  "departure_date": "2025-06-05",
+  "cabin_class": "business",
+  "passengers": [
+    {
+        "age": 20
+    }
+  ],
+  "max_connections": 0
+}
+```
+With return ticket*
 ```
 {
   "origin": "KTM",
