@@ -48,9 +48,8 @@ With return ticket*
 
 #### 👤 3. `passengers` (required)
 - Type: `array` of passenger objects
-- Each object can include:
-  - `type` (optional): `"adult"` or `"child"`
-  - `age` (optional): number
+- Each object must include:
+  - `age` (required): number (1-150)
 
 **⚠️ Important:**
 - If only one passenger is provided and they are under 18, the request will fail (some airlines don't allow unaccompanied minors).
