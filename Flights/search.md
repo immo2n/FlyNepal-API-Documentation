@@ -76,17 +76,21 @@ With return ticket*
     "offers": [
         {
             "offer_id": "off_0000Aud3PBM9b57vgi4nLc",
+
             "carrier_name": "Duffel Airways",
             "carrier_logo": "https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/ZZ.svg",
             "carrier_flight_number": "9924",
+
             "origin": "Tribhuvan International Airport",
             "destination": "Tribhuvan International Airport",
             "journey_distance": 24222.345841500923,
             "mid_journey_stopages": [],
+
             "tax_amount": "1243.20",
             "total_currency": "USD",
             "created_at": "2025-05-30T19:12:21.082904Z",
             "total_amount": "8149.83",
+
             "passengers": [
                 {
                     "id": "pas_0000Aud3PB8KQU4Gzpbkn5",
