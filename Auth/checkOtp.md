@@ -42,3 +42,12 @@ POST: /api/check-otp
   "data": []
 }
 ```
+### When OTP is incorrect
+```
+{
+  "success": false,
+  "message": "User not found!",
+  "code": "OPT_INCORRECT",
+  "data": []
+}
+```
