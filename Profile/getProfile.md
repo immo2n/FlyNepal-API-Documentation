@@ -25,6 +25,7 @@ POST: /api/profile/get
 }
 ```
 ### When invalid data sent
+- When this happens, front end should immediately show session expired and log out.
 ```
 {
   "success": false,
