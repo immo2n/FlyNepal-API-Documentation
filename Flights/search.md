@@ -78,32 +78,41 @@ With return ticket*
 {
     "offers": [
         {
-            "offer_id": "off_0000Aud3PBM9b57vgi4nLc",
-
+            "offer_id": "off_0000AuoE7qV13I5czJhs3u",
             "carrier_name": "Duffel Airways",
             "carrier_logo": "https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/ZZ.svg",
-            "carrier_flight_number": "9924",
-
+            "carrier_flight_number": "3764",
             "origin": "Tribhuvan International Airport",
-            "destination": "Tribhuvan International Airport",
-            "journey_distance": 24222.345841500923,
-            "mid_journey_stopages": [],
+            "destination": "John F. Kennedy International Airport",
 
-            "tax_amount": "1243.20",
+            "mid_journey_stopages": [],
+            "distance": "12.12 km",
+
+            "departure_date": "2025-06-04",
+            "departure_time": "3:05 AM",
+            "arrival_date": "2025-06-05",
+            "arrival_time": "10:04 AM",
+            "duration": "0d 16h 44m",
+
+            "fare_brand_name": "Premium",
+            "tax_amount": "611.92",
             "total_currency": "USD",
-            "created_at": "2025-05-30T19:12:21.082904Z",
-            "total_amount": "8149.83",
+            "created_at": "2025-06-05T04:34:17.873780Z",
+            "total_amount": "4011.53",
 
             "passengers": [
                 {
-                    "id": "pas_0000Aud3PB8KQU4Gzpbkn5",
+                    "id": "pas_0000AuoE7pnle5UkpBTKeQ",
                     "type": "adult",
                     "age": 20
                 }
             ]
         },
-        .......
-        .......
+
+        .....
+        .....
+        .....
+
     ]
 }
 ```
