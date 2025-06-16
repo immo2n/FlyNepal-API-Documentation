@@ -15,7 +15,7 @@ POST: /flights/search
   "cabin_class": "business",
   "passengers": [
     {
-        "age": 20
+        "type": "adult"
     }
   ],
   "max_connections": 0
