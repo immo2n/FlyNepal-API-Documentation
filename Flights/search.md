@@ -33,7 +33,7 @@ With return ticket*
   "cabin_class": "business",
   "passengers": [
     {
-        "age": 20
+        "type": "adult"
     }
   ],
   "max_connections": 0
@@ -55,8 +55,8 @@ With return ticket*
   - `age` (required): number (1-150)
 
 **⚠️ Important:**
-- If only one passenger is provided and they are under 18, the request will fail (some airlines don't allow unaccompanied minors).
-- To avoid this, always include at least **one adult** (age ≥ 18) if any passengers are minors.
+- If only one passenger is provided and they are non adult, the request will fail (some airlines don't allow unaccompanied minors).
+- To avoid this, always include at least **one adult** if any passengers are minors.
 
 #### 💺 4. `cabin_class` (optional, default: `"economy"`)
 - Type: `string`
