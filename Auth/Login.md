@@ -1,6 +1,6 @@
 ### Endpoint
 ```
-POST: /v1/auth/user/register
+POST: /v1/auth/user/login
 ```
 
 ### Payload
@@ -15,16 +15,16 @@ Successfully done
 ```
 {
     "success": true,
-    "message": "Signup successful! OTP sent please verify with the email.",
+    "message": "Welcome! OTP sent please verify with the email.",
     "code": "OK",
     "data": "example@email.com"
 }
 ```
-When email is alrady registered
+No user with email
 ```
 {
     "success": false,
-    "message": "Email already exists",
+    "message": "User not found!",
     "code": "CONFLICT",
     "data": null
 }
