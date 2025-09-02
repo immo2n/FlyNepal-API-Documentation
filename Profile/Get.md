@@ -8,6 +8,7 @@ POST: /v1/user/get
 {
     "token": "PDvHo1a8ApnnXu3C9UoKREN3vcYghg6j",
 }
+```
 
 ### Responses
 Success
