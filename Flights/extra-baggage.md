@@ -1,4 +1,4 @@
-Certainly! Here’s a concise explanation with sample request and response for your API, formatted for a Markdown (.md) file.
+
 
 Retrieve Extra Baggage Options API
 Endpoint:
