@@ -1,42 +1,47 @@
 ### Endpoint
 ```
-POST: /flights/international/book
+GET: /flights/international/offers/get/OFFER_ID
 ```
+- example: /flights/international/offers/get/off_0000AxrBp1CsnVMEBNvC4I
 
-### Payload
-- Endpoint for booking the flights
-```
-{
-  "offerId": "off_0000Av8tQCcVvdH0rcatCV",
-  "passengerId": "pas_0000Av8tQCNcozMc7Rczzc",
-  "passengerName": "Tony Stark",
-  "passengerGender": "m",
-  "passengerTitle": "Mr",
-  "passengerEmail": "tony@avengers.com",
-  "passengerDateOfBirth": "2000-06-20",
-  "passengerType": "adult",
-  "passengerPhoneNumber": "+8801317215403"
-}
-```
+### IMPORTANT
+Please make sure to call the offer often, specially when doing final checkout as the prices for any offer can chnage at any given time! Getting null means the offer is no longer available!
 
-### Response
-When booked the flight
-```
+### Example response
+```json
 {
-  "bookingReference": "RFE4MR",
-  "success": true,
-  "message": "Booked Successfully",
-  "errorMessage": null
-}
-```
-- This reference Id is everything! so --- show this to the user wisely. And for now save this on the app itself - database is not yet connected. I REPEAT, SAVE THE REFERENCE ID ON THE APP ITESELF.
-
-When failed, say you booked an already booked one
-```
-{
-  "bookingReference": null,
-  "success": false,
-  "message": "Booking Failed",
-  "errorMessage": "DuffelException(errors=[ValidationError(super=Error(code=offer_request_already_booked, documentationUrl=https://duffel.com/docs/api/overview/response-handling, message=Field 'selected_offers' has offers included in a offer request that has already been booked; please perform a new search, title=Can't book multiple offers from the same offer request, errorType=validation_error), source=ValidationError.ValidationErrorSource(field=selected_offers, pointer=/selected_offers))], meta=Meta(requestId=GEkcQ-wofl24VUgE1ddE, status=422))"
+    "offer_id": "off_0000AxrBp1CsnVMEBNvC4I",
+    "carrier_name": "Duffel Airways",
+    "carrier_logo": "https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/ZZ.svg",
+    "carrier_flight_number": "1639",
+    "origin": "Dhaka Shahjalal International Airport",
+    "destination": "Dubai International Airport",
+    "distance": "3537.1066324533567",
+    "departure_date": "2025-09-10T06:58",
+    "departure_time": "2025-09-10T06:58",
+    "arrival_date": "2025-09-10T10:15",
+    "arrival_time": "2025-09-10T10:15",
+    "duration": "PT5H17M",
+    "fare_brand_name": "Basic",
+    "tax_amount": "30.38",
+    "total_currency": "USD",
+    "created_at": "2025-09-04T08:28:55.376916",
+    "total_amount": "199.17",
+    "passengers": [
+        {
+            "id": "pas_0000AxrBp10TXdQtYu7HjG",
+            "baggageList": [
+                {
+                    "count": 1,
+                    "type": "checked"
+                },
+                {
+                    "count": 1,
+                    "type": "carry-on"
+                }
+            ],
+            "fareCode": "Y20LGTN2"
+        }
+    ]
 }
 ```
