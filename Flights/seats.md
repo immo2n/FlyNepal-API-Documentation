@@ -1,7 +1,7 @@
 ## International Flight Seat Map API
 
 ### Endpoint
-`POST http://{{ip}}/api/flights/international/seats`
+`POST http://{{ip}}/flights/international/seats`
 
 ### Description
 Retrieves the seat map for an international flight offer. The seat map includes cabin layout, seat availability, and associated services.

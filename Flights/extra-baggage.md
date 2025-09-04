@@ -2,7 +2,7 @@
 
 ## Endpoint
 
-`POST http://{{ip}}/api/offers/{{offer_id}}/extra-baggage`
+`POST http://{{ip}}/flights/international/offers/{{offer_id}}/extra-baggage`
 
 ## Request Body Example
 
