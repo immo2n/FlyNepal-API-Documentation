@@ -43,7 +43,7 @@ This endpoint allows you to **hold** a flight booking with passenger details and
 
 | Field                   | Type     | Required | Description |
 |--------------------------|----------|----------|-------------|
-| `orderType`             | string   | Yes      | Defines the booking type. For hold booking, use `"hold"`. |
+| `orderType`             | string   | Yes      | Defines the booking type. For hold booking, use `"hold"`, to instant pay use `"instant"`. |
 | `offerId`               | string   | Yes      | Unique identifier of the flight offer. |
 | `passengers`            | array    | Yes      | List of passengers for the booking. |
 | `passengerId`           | string   | Yes      | Unique passenger identifier. |
