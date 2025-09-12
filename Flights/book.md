@@ -31,7 +31,8 @@ This endpoint allows you to **hold** a flight booking with passenger details and
   "addServices": [
     {
       "id": "{{serviceId}}",
-      "quantity": 1
+      "quantity": 1,
+      "unitPrice": 27.12
     }
   ]
 }
@@ -57,6 +58,7 @@ This endpoint allows you to **hold** a flight booking with passenger details and
 | `addServices`           | array    | No       | Additional services to include (e.g., baggage, meals, seat selection). |
 | `id`                    | string   | Yes (if services included) | Service identifier. |
 | `quantity`              | integer  | Yes (if services included) | Quantity of the service. |
+| `unitPrice`              | double  | Yes (if services included) | unitPrice of the service. |
 
 ---
 
