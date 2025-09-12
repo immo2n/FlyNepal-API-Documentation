@@ -2,7 +2,7 @@
 
 ## Endpoint
 ```
-POST /api/v1/bookings/hold
+POST /flights/international/book
 ```
 
 ## Description
