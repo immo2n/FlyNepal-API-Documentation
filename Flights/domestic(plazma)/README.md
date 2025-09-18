@@ -6,12 +6,7 @@ For **all domestic flight endpoints**, please refer to the official **Swagger do
 
 👉 [FlyNepal Swagger UI](https://api.flynepal.com/swagger-ui/index.html)
 
----
-
-## 📋 Example Flight Offer List
-
 Below is a preview screenshot (`list.png`) showing a sample list of flight offers:
 
 ![Flight Offer List](./list.png)
 
----
