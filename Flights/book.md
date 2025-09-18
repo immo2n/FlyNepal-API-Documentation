@@ -19,7 +19,8 @@ This endpoint allows you to **hold** a flight booking with passenger details and
     "passengers": [
         {
             "passengerId": "{{passengerId_1}}",
-            "infantPassengerId": "{{passengerId_4}}",
+            "infantPassengerId": "{{passengerId_4}}", // This node is must when infant without seat is added with a offer, we are associating infant with this adult
+            "passengerType": "adult", // This node is optional
             "passengerName": "Peter Parker",
             "passengerGender": "m",
             "passengerTitle": "Mr",
