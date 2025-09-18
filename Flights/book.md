@@ -14,27 +14,54 @@ This endpoint allows you to **hold** a flight booking with passenger details and
 
 ```json
 {
-  "orderType": "hold",
-  "offerId": "{{offerId}}",
-  "passengers": [
-    {
-      "passengerId": "{{passengerId}}",
-      "passengerName": "Peter Parker",
-      "passengerGender": "m",
-      "passengerTitle": "Mr",
-      "passengerEmail": "peter@avengers.com",
-      "passengerDateOfBirth": "2003-08-10",
-      "passengerType": "child",
-      "passengerPhoneNumber": "+8801317215404"
-    }
-  ],
-  "addServices": [
-    {
-      "id": "{{serviceId}}",
-      "quantity": 1,
-      "unitPrice": 27.12
-    }
-  ]
+    "orderType": "hold",
+    "offerId": "{{offerId}}",
+    "passengers": [
+        {
+            "passengerId": "{{passengerId_1}}",
+            "infantPassengerId": "{{passengerId_4}}",
+            "passengerName": "Peter Parker",
+            "passengerGender": "m",
+            "passengerTitle": "Mr",
+            "passengerEmail": "peter@avengers.com",
+            "passengerDateOfBirth": "2003-08-10",
+            "passengerPhoneNumber": "+8801317215404"
+        },
+        {
+            "passengerId": "{{passengerId_2}}",
+            "passengerName": "Peter Faisal",
+            "passengerGender": "m",
+            "passengerTitle": "Mr",
+            "passengerEmail": "faisal@avengers.com",
+            "passengerDateOfBirth": "2001-08-10",
+            "passengerPhoneNumber": "+8801317225404"
+        },
+        {
+            "passengerId": "{{passengerId_3}}",
+            "passengerName": "Peter Samia",
+            "passengerGender": "f",
+            "passengerTitle": "Mrs",
+            "passengerEmail": "samia@avengers.com",
+            "passengerDateOfBirth": "2017-09-10",
+            "passengerPhoneNumber": "+8801327215404"
+        },
+        {
+            "passengerId": "{{passengerId_4}}",
+            "passengerName": "Peter Fahim",
+            "passengerGender": "m",
+            "passengerTitle": "Mr",
+            "passengerEmail": "fahim@avengers.com",
+            "passengerDateOfBirth": "2024-08-10",
+            "passengerPhoneNumber": "+8801317215504"
+        }
+    ],
+    "addServices": [
+        {
+            "id": "{{serviceId}}",
+            "quantity": 1,
+            "unitPrice" : {{unitPrice}} 
+        }
+    ]
 }
 ```
 
@@ -47,13 +74,14 @@ This endpoint allows you to **hold** a flight booking with passenger details and
 | `orderType`             | string   | Yes      | Defines the booking type. For hold booking, use `"hold"`, to instant pay use `"instant"`. |
 | `offerId`               | string   | Yes      | Unique identifier of the flight offer. |
 | `passengers`            | array    | Yes      | List of passengers for the booking. |
+| `infantPassengerId`           | string   | Yes (If infant without seat)     | Infant's passengerId |
 | `passengerId`           | string   | Yes      | Unique passenger identifier. |
 | `passengerName`         | string   | Yes      | Full name of the passenger. |
 | `passengerGender`       | string   | Yes      | Gender of the passenger (`"m"` for male, `"f"` for female). |
 | `passengerTitle`        | string   | Yes      | Title (`Mr`, `Mrs`, `Ms`, etc.). |
 | `passengerEmail`        | string   | Yes      | Email address of the passenger. |
 | `passengerDateOfBirth`  | string   | Yes      | Date of birth in `YYYY-MM-DD` format. |
-| `passengerType`         | string   | Yes      | Type of passenger (`adult`, `child`, `infant`). |
+| `passengerType`         | string   | No      | Type of passenger (`adult`, `child`, `infant`). |
 | `passengerPhoneNumber`  | string   | Yes      | Passenger’s contact number. |
 | `addServices`           | array    | No       | Additional services to include (e.g., baggage, meals, seat selection). |
 | `id`                    | string   | Yes (if services included) | Service identifier. |
