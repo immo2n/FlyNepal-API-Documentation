@@ -66,7 +66,7 @@ Returns a JSON array of booking objects.
         "provider": "duffel",
         "orderId": "ord_0000AyzrLbyBHl6iXMElAG",
         "userId": null,
-        "status": "PaymentStatus(awaitingPayment=false, paymentRequiredBy=null, priceGuaranteeExpiresAt=null)",
+        "status": "booked",
         "totalAmount": 1514.26,
         "currency": "USD",
         "createdAt": "2025-10-08T10:44:00.664698",
@@ -78,7 +78,7 @@ Returns a JSON array of booking objects.
         "provider": "duffel",
         "orderId": "ord_0000AyzVBdRlvQBWj8u2xE",
         "userId": null,
-        "status": "PaymentStatus(awaitingPayment=false, paymentRequiredBy=null, priceGuaranteeExpiresAt=null)",
+        "status": "cancelled",
         "totalAmount": 1511.98,
         "currency": "USD",
         "createdAt": "2025-10-08T06:35:41.85675",
@@ -98,7 +98,7 @@ Returns a JSON array of booking objects.
 | `provider`        | string    | Name of the booking provider (e.g., "duffel").                                                                            |
 | `orderId`         | string    | Provider's order ID.                                                                                                      |
 | `userId`          | integer\|null | ID of the user who made the booking, if available.                                                                |
-| `status`          | string    | The booking status (e.g., `"issued"`, or details about payment status).                                                   |
+| `status`          | string    | The booking status (e.g., `"issued"`, `booked` or `cancelled`).                                                   |
 | `totalAmount`     | number    | Total cost of the booking.                                                                                                |
 | `currency`        | string    | Currency code (e.g., "USD").                                                                                              |
 | `createdAt`       | string    | Timestamp when the booking was created (ISO 8601 format).                                                                 |
@@ -108,7 +108,7 @@ Returns a JSON array of booking objects.
 
 ## Notes
 
-- The `status` field can be a simple string (e.g., `"issued"`) or a detailed object string (e.g., `"PaymentStatus(awaitingPayment=false, paymentRequiredBy=null, priceGuaranteeExpiresAt=null)"`).
+- The `status` field can be a simple string (e.g., `"issued"`).
 - `userId` can be `null` if the booking is not linked to a specific user.
 - `updatedAt` may be `null` for new bookings.
 
