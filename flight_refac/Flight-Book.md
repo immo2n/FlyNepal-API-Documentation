@@ -105,11 +105,18 @@ This endpoint allows you to **hold** a flight booking with passenger details and
 
 ```json
 {
-  "bookingReference": "GIGMOZ",
-  "orderId": "ord_0000Ay6FtkPYGralO8m5g0",
-  "success": true,
-  "message": "Booked Successfully",
-  "errorMessage": null
+    "bookingReference": "BYUIPF",
+    "orderId": "ord_0000AyzVBdRlvQBWj8u2xE",
+    "provider": "duffel",
+    "totalAmount": 1511.98,
+    "currency": "USD",
+    "status": "PaymentStatus(awaitingPayment=false, paymentRequiredBy=null, priceGuaranteeExpiresAt=null)",
+    "userId": null,
+    "remarks": null,
+    "success": true,
+    "message": "Booked Successfully",
+    "errorMessage": null,
+    "createdAt": "2025-10-08T06:35:41.85675"
 }
 ```
 
