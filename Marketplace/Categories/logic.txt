@@ -1,0 +1,17 @@
+Logic of marketplace categories:
+
+*A vendor can make a product category with attributes*
+
+Now, what is an attibute?
+
+An attribute is a "type" or quality for example...
+
+If a category is "Clothing", attributes will be...
+-> size
+-> color
+-> gender
+etc...
+
+To create a category, the user must send a list of attributes.
+
+So to create a category, the user must have some attributes created.
