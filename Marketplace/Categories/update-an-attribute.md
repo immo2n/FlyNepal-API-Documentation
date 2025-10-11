@@ -1,0 +1,52 @@
+### Endpoint
+```
+PUT: /v1/categories/{id}
+```
+
+### Common mistake
+- WARNGIN: for post paths are /v1/categories/attributes
+- For get they are: /v1/categories/attributes/
+- id is category id, you can get this from the create category or, list of user's
+
+### Payload
+```
+{
+  "user": "Sp7W7K6aAAGG",
+  "name": "Clothings",
+  "attributes": [
+    3
+  ]
+}
+```
+
+- Clue: the user is the logged in user's user(id) you can see the Profile/Get.md to get this!
+- attributes is an array of attributes the user created. You can get the list of attributes from the get-attribute-by-user.md doc.
+
+### Responses
+Successfully done
+```json
+{
+    "success": true,
+    "message": "Category updated successfully",
+    "data": {
+        "createdAt": "2025-10-11T07:09:52.130145Z",
+        "updatedAt": "2025-10-11T07:14:12.938417504Z",
+        "id": 1,
+        "name": "Clothings",
+        "attributes": [
+            {
+                "createdAt": "2025-10-11T07:01:09.662521Z",
+                "updatedAt": "2025-10-11T07:01:09.662521Z",
+                "id": 3,
+                "name": "Color",
+                "label": "Color",
+                "values": [
+                    "yellow",
+                    "green",
+                    "blue"
+                ]
+            }
+        ]
+    }
+}
+```
