@@ -18,7 +18,7 @@ Default value : createdAt,desc
 
 ### Responses
 Successfully
-```
+```json
 {
     "success": true,
     "data": [
@@ -44,3 +44,4 @@ Successfully
         "totalPages": 1
     }
 }
+```

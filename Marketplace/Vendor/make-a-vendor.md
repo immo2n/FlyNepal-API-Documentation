@@ -4,7 +4,7 @@ POST: /v1/vendors
 ```
 
 ### Payload
-```
+```json
 {
   "user": "Sp7W7K6aAAGG",
   "name": "GreenLeaf Supplies Ltd",
@@ -23,7 +23,7 @@ POST: /v1/vendors
 
 ### Responses
 Successfully done
-```
+```json
 {
     "success": true,
     "message": "Vendor created successfully",
@@ -42,3 +42,4 @@ Successfully done
         "businessCertificateUrl": null
     }
 }
+```
