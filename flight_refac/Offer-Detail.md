@@ -2,7 +2,7 @@
 
 ## Endpoint
 
-**GET** `/v2/flights/international/offer/detail?provider=duffel&offerId={{offerId}}`
+**GET** `/v2/flights/offer/detail?offerId={{offerId}}&provider=duffel`
 
 ---
 
