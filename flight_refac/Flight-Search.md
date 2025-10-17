@@ -1,9 +1,9 @@
 
-# International Flight Search API (v2)
+# Flight Search API (v2)
 
 ## Endpoint
 
-**POST** `/v2/flights/international/search`
+**POST** `/v2/flights/search`
 
 ## Overview
 
@@ -19,25 +19,25 @@ Send a **POST** request with a JSON payload:
 
 ```json
 {
-    "provider": "duffel",              // Flight provider, e.g., "duffel"
-    "cabinClass": "economy",           // Cabin class: "economy", "business", etc.
-    "currency": "USD",                 // Currency for prices
-    "maxConnections": 1,               // Maximum number of allowed connections
+    "provider": "duffel",
+    "cabinClass": "economy",
+    "currency": "USD",
+    "maxConnections": 2,
     "passengers": {
-        "adult": 2,                    // Number of adults
-        "child": 0,                    // Number of children
-        "infant": 0                    // Number of infants
+        "adult": 1,
+        "child": 0,
+        "infant": 0
     },
     "slices": [
         {
-            "origin": "DAC",           // Departure airport code (IATA)
-            "destination": "DXB",      // Arrival airport code (IATA)
-            "departureDate": "2025-10-05" // Departure date (YYYY-MM-DD)
+            "origin": "DAC",
+            "destination": "DXB",
+            "departureDate": "2025-11-20"
         },
         {
-            "origin": "DXB",           // Return leg origin
-            "destination": "DAC",      // Return leg destination
-            "departureDate": "2025-11-05" // Return date
+            "origin": "DXB",
+            "destination": "DAC",
+            "departureDate": "2025-12-20"
         }
     ]
 }
