@@ -3,7 +3,7 @@
 ## Endpoint
 
 ```
-GET /v2/flights/bookings
+GET /v2/flight/bookings
 ```
 
 ---
