@@ -2,7 +2,7 @@
 
 ## Endpoint
 
-**GET** `/v2/flights/international/order/detail?orderId={{orderId}}&provider=duffel`
+**GET** `/v2/flight/international/order/detail?orderId={{orderId}}&provider=duffel`
 
 ---
 
