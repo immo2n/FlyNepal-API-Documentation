@@ -3,7 +3,7 @@
 
 ## Endpoint
 
-**POST** `/v2/flights/search`
+**POST** `/v2/flight/search`
 
 ## Overview
 
