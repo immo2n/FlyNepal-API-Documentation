@@ -2,7 +2,7 @@
 
 ## Endpoint
 ```
-POST /v2/flights/international/book
+POST /v2/flight/book
 ```
 
 ## Description
