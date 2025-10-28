@@ -1,6 +1,10 @@
+### Endpoint
+```
 URL: GET | /v1/products
+```
 Response: 
-`{
+```json
+{
     "success": true,
     "data": [
         {
@@ -82,4 +86,5 @@ Response:
         "totalElements": 1,
         "totalPages": 1
     }
-}`
+}
+```
