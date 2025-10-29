@@ -1,5 +1,5 @@
 ### Endpoint
-``` POST | http://{{ip}}/v1/products/3/items/1 ```
+``` POST | http://{{ip}}/v1/products/3/items ```
 
 Payload:
 
