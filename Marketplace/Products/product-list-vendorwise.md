@@ -1,17 +1,21 @@
 ## There are different types of filtering available here:
 
 ### Basic Request: 
-GET http://localhost:8080/v1/products/vendor/123
+``` GET /v1/products/vendor/123 ```
 
 ### With pagination: 
-GET http://localhost:8080/v1/products/vendor/123?page=0&size=10
-GET http://localhost:8080/v1/products/vendor/123?page=1&size=20
-GET http://localhost:8080/v1/products/vendor/123?page=2&size=5
+```
+GET /v1/products/vendor/123?page=0&size=10
+GET /v1/products/vendor/123?page=1&size=20
+GET /v1/products/vendor/123?page=2&size=5
+```
 
 ### Pagination + Sorting Combined
-GET http://localhost:8080/v1/products/vendor/123?page=0&size=10&sort=createdAt,desc
-GET http://localhost:8080/v1/products/vendor/123?page=1&size=15&sort=title,asc
-GET http://localhost:8080/v1/products/vendor/123?page=0&size=20&sort=rating,desc
+```
+GET /v1/products/vendor/123?page=0&size=10&sort=createdAt,desc
+GET /v1/products/vendor/123?page=1&size=15&sort=title,asc
+GET /v1/products/vendor/123?page=0&size=20&sort=rating,desc
+```
 
 Sample response:
 
