@@ -37,105 +37,265 @@ Returns detailed information about the selected offer.
 
 ```json
 {
-    "success": true,
-    "order": {
-        "id": "ord_0000AyzVBdRlvQBWj8u2xE",
-        "price": {
-            "amount": "1511.98",
-            "currency": "USD",
-            "display": "USD 1511.98"
-        },
-        "passengers": [
+  "status": true,
+  "code": 200,
+  "message": "PNR retrieval successful",
+  "bookingDetail": {
+    "pnrCode": "CPYBDV",
+    "provider": "mondee",
+    "orderId": "20001150630107",
+    "bookingStatus": "Cancelled",
+    "isRefundable": false,
+    "ticketingTimeLimit": "2025-11-10T00:00:00",
+    "companyContacts": {
+      "phone": "+8809614500500",
+      "email": "support@flightdesk.com"
+    },
+    "customerContacts": {
+      "emails": [
+        "john.doe@gmail.com"
+      ],
+      "phones": [
+        "+8801851070451"
+      ]
+    },
+    "prices": {
+      "totalAmount": "1300",
+      "currency": "EUR",
+      "adult": {
+        "count": 2,
+        "totalFareSinglePax": "400",
+        "baseFareSinglePax": "300",
+        "taxFareSinglePax": "100",
+        "TotalFareAllPax": "800",
+        "currency": "EUR"
+      },
+      "child": {
+        "count": 1,
+        "totalFareSinglePax": "300",
+        "baseFareSinglePax": "250",
+        "taxFareSinglePax": "50",
+        "TotalFareAllPax": "300",
+        "currency": "EUR"
+      },
+      "infant": {
+        "count": 1,
+        "totalFareSinglePax": "200",
+        "baseFareSinglePax": "170",
+        "taxFareSinglePax": "30",
+        "TotalFareAllPax": "200",
+        "currency": "EUR"
+      }
+    },
+    "passengers": [
+      {
+        "givenName": "MD MIJANUR",
+        "surname": "RAHMAN",
+        "type": "adult",
+        "dateOfBirth": "",
+        "id": "1.1",
+        "parentsId": null,
+        "doc": {
+          "hasDoc": true,
+          "docInfo": [
             {
-                "id": "pas_0000AyzV5e2F9ifHjuQN7d",
-                "type": "child",
-                "baggage": {}
-            },
-            {
-                "id": "pas_0000AyzV5e2F9ifHjuQN7b",
-                "type": "adult",
-                "baggage": {}
-            },
-            {
-                "id": "pas_0000AyzV5e2F9ifHjuQN7e",
-                "type": "infant_without_seat",
-                "baggage": {}
-            },
-            {
-                "id": "pas_0000AyzV5e2F9ifHjuQN7c",
-                "type": "child",
-                "baggage": {}
+              "type": "P",
+              "country": "BGD",
+              "number": "A03086003",
+              "nationality": "BGD",
+              "dateOfBirth": "1995-02-01",
+              "gender": "M",
+              "expireDate": "2032-02-06",
+              "surname": "RAHMAN",
+              "givenName": "MD MIJANUR"
             }
-        ],
-        "slices": [
-            {
-                "id": "sli_0000AyzVBdRlvQBWj8u2xF",
-                "origin": {
-                    "code": "DAC",
-                    "name": "Dhaka Shahjalal International Airport",
-                    "city": "Dhaka"
-                },
-                "destination": {
-                    "code": "DXB",
-                    "name": "Dubai International Airport",
-                    "city": "Dubai"
-                },
-                "departure": {
-                    "dateTime": "2025-11-05T01:00",
-                    "date": "2025-11-05",
-                    "time": "01:00"
-                },
-                "arrival": {
-                    "dateTime": "2025-11-05T04:25",
-                    "date": "2025-11-05",
-                    "time": "04:25"
-                },
-                "duration": "PT5H25M",
-                "airline": {
-                    "name": "Emirates",
-                    "flightNumber": "585",
-                    "logo": "https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/EK.svg"
-                }
-            },
-            {
-                "id": "sli_0000AyzVBdRlvQBWj8u2xH",
-                "origin": {
-                    "code": "DXB",
-                    "name": "Dubai International Airport",
-                    "city": "Dubai"
-                },
-                "destination": {
-                    "code": "DAC",
-                    "name": "Dhaka Shahjalal International Airport",
-                    "city": "Dhaka"
-                },
-                "departure": {
-                    "dateTime": "2025-12-05T10:30",
-                    "date": "2025-12-05",
-                    "time": "10:30"
-                },
-                "arrival": {
-                    "dateTime": "2025-12-05T17:00",
-                    "date": "2025-12-05",
-                    "time": "17:00"
-                },
-                "duration": "PT4H30M",
-                "airline": {
-                    "name": "Emirates",
-                    "flightNumber": "586",
-                    "logo": "https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/EK.svg"
-                }
-            }
-        ],
-        "conditions": {
-            "refundable": false,
-            "changeable": false
+          ]
         },
-        "metadata": {
-            "createdAt": "2025-10-08T06:35:41.856750",
-            "updatedAt": null
+        "ticket": {
+          "ticketNumber": "",
+          "ticketVoided": false,
+          "ticketingDate": "",
+          "hasTicket": false
         }
-    }
+      },
+      {
+        "givenName": "MD Hasib",
+        "surname": "RAHMAN",
+        "type": "child",
+        "dateOfBirth": "",
+        "id": "2.1",
+        "parentsId": null,
+        "doc": {
+          "hasDoc": true,
+          "docInfo": [
+            {
+              "type": "P",
+              "country": "BGD",
+              "number": "A03086003",
+              "nationality": "BGD",
+              "dateOfBirth": "1995-02-01",
+              "gender": "M",
+              "expireDate": "2032-02-06",
+              "surname": "RAHMAN",
+              "givenName": "MD MIJANUR"
+            }
+          ]
+        },
+        "ticket": {
+          "ticketNumber": "",
+          "ticketVoided": false,
+          "ticketingDate": "",
+          "hasTicket": false
+        }
+      }
+    ],
+    "slices": [
+      {
+        "direction": "outbound",
+        "segments": [
+          {
+            "id": 1,
+            "departureAirport": {
+              "code": "DAC",
+              "name": "Dhaka Shahjalal International Airport",
+              "city": "Dhaka",
+              "country": "Bangladesh",
+              "terminal": "2"
+            },
+            "arrivalAirport": {
+              "code": "CMB",
+              "name": "Colombo Bandaranaike Airport",
+              "city": "Colombo",
+              "country": "Sri Lanka",
+              "terminal": "1"
+            },
+            "departureDateTime": "2025-11-20T13:00:00",
+            "arrivalDateTime": "2025-11-20T15:55:00",
+            "duration": "3H 25M",
+            "flightNumber": "UL190",
+            "marketingCarrier": {
+              "code": "UL",
+              "name": "SriLankan Airlines",
+              "logoUrl": "https://assets.duffel.com/img/airlines/UL.svg"
+            },
+            "operatingCarrier": {
+              "code": "UL",
+              "name": "SriLankan Airlines",
+              "logoUrl": "https://assets.duffel.com/img/airlines/UL.svg"
+            },
+            "bookingClass": "L",
+            "cabinClass": "Economy",
+            "segmentStatus": "Confirmed",
+            "baggageInfo": [
+              {
+                "type": "checked",
+                "baggage": "30KG"
+              },
+              {
+                "type": "carryOn",
+                "baggage": "1PC"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "departureAirport": {
+              "code": "CMB",
+              "name": "Colombo Bandaranaike Airport",
+              "city": "Colombo",
+              "country": "Sri Lanka",
+              "terminal": "2"
+            },
+            "arrivalAirport": {
+              "code": "DXB",
+              "name": "Dubai International Airport",
+              "city": "Dubai",
+              "country": "UAE",
+              "terminal": "1"
+            },
+            "departureDateTime": "2025-11-21T13:45:00",
+            "arrivalDateTime": "2025-11-21T16:55:00",
+            "duration": "4H 40M",
+            "flightNumber": "UL231",
+            "marketingCarrier": {
+              "code": "UL",
+              "name": "SriLankan Airlines",
+              "logoUrl": "https://assets.duffel.com/img/airlines/UL.svg"
+            },
+            "operatingCarrier": {
+              "code": "UL",
+              "name": "SriLankan Airlines",
+              "logoUrl": "https://assets.duffel.com/img/airlines/UL.svg"
+            },
+            "bookingClass": "L",
+            "cabinClass": "Economy",
+            "segmentStatus": "Hold",
+            "baggageInfo": [
+              {
+                "type": "checked",
+                "baggage": "30KG"
+              },
+              {
+                "type": "carryOn",
+                "baggage": "1PC"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "direction": "return",
+        "segments": [
+          {
+            "id": 3,
+            "departureAirport": {
+              "code": "DXB",
+              "name": "Dubai International Airport",
+              "city": "Dubai",
+              "country": "UAE",
+              "terminal": "2"
+            },
+            "arrivalAirport": {
+              "code": "DAC",
+              "name": "Dhaka Shahjalal International Airport",
+              "city": "Dhaka",
+              "country": "Bangladesh",
+              "terminal": "1"
+            },
+            "departureDateTime": "2025-12-21T07:50:00",
+            "arrivalDateTime": "2025-12-21T11:30:00",
+            "duration": "4H 20M",
+            "flightNumber": "UL189",
+            "marketingCarrier": {
+              "code": "UL",
+              "name": "SriLankan Airlines",
+              "logoUrl": "https://assets.duffel.com/img/airlines/UL.svg"
+            },
+            "operatingCarrier": {
+              "code": "UL",
+              "name": "SriLankan Airlines",
+              "logoUrl": "https://assets.duffel.com/img/airlines/UL.svg"
+            },
+            "equipment": "Airbus A320",
+            "bookingClass": "S",
+            "cabinClass": "Economy",
+            "segmentStatus": "Hold",
+            "baggageInfo": [
+              {
+                "type": "checked",
+                "baggage": "30KG"
+              },
+              {
+                "type": "carryOn",
+                "baggage": "1PC"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "username": "hojama"
+  }
 }
 ```
 
