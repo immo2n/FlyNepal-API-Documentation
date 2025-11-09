@@ -4,6 +4,8 @@
 
 **GET** `/v2/flight/international/order/detail?orderId={{orderId}}&pnr={{pnr}}&provider=duffel`
 
+[N.B. Here `pnr` parameter is optional for duffel but mandatory for mondee]
+
 ---
 
 ## Overview
