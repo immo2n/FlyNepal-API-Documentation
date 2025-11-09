@@ -55,24 +55,44 @@ This endpoint allows you to **hold** a flight booking with passenger details and
             "passengerDateOfBirth": "2024-08-10",
             "passengerPhoneNumber": "+8801317215504"
         }
-    ]
-    // "addServices": [
-    //     {
-    //         "id": "ase_0000AytTE77fq7LIWhaarC",
-    //         "quantity": 1,
-    //         "unitPrice": 27.14
-    //     },
-    //     {
-    //         "id": "ase_0000AytTE77fq7LIWhaarD",
-    //         "quantity": 1,
-    //         "unitPrice": 27.14
-    //     },
-    //     {
-    //         "id": "ase_0000AytTE77fq7LIWhaarE",
-    //         "quantity": 1,
-    //         "unitPrice": 27.14
-    //     }
-    // ]
+    ],
+    "addServices": [
+        {
+            "id": "ase_0000AytTE77fq7LIWhaarC",
+            "quantity": 1,
+            "unitPrice": 27.14
+        },
+        {
+            "id": "ase_0000AytTE77fq7LIWhaarD",
+            "quantity": 1,
+            "unitPrice": 27.14
+        },
+        {
+            "id": "ase_0000AytTE77fq7LIWhaarE",
+            "quantity": 1,
+            "unitPrice": 27.14
+        }
+    ],
+    "paymentDetail": {
+        "paymentType": "CC",
+        "creditCardDetails": {
+            "cardType": "MI",
+            "cardNumber": "5111-1111-1111-1118",
+            "cvv": "123",
+            "expiryDate": "12/27",
+            "bankPhoneNum": "+14155550000",
+            "billingPhoneNum": "+14155552671"
+        },
+        "billingAddress": {
+            "name": "John Doe",
+            "address1": "123 Main Street",
+            "address2": "Apt 5B",
+            "zipCode": "94105",
+            "city": "San Francisco",
+            "country": "US",
+            "state": "CA"
+        }
+    }
 }
 ```
 
