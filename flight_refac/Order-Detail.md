@@ -2,7 +2,7 @@
 
 ## Endpoint
 
-**GET** `/v2/flight/international/order/detail?orderId={{orderId}}&pnr={{pnr}}&provider=duffel`
+**GET** `/v2/flight/order/detail?orderId={{orderId}}&pnr={{pnr}}&provider=mondee`
 
 [N.B. Here `pnr` parameter is optional for duffel but mandatory for mondee]
 
@@ -26,7 +26,7 @@ Retrieve the full details for a specific flight offer, including price, conditio
 ### Example Request
 
 ```
-GET /v2/flights/international/order/detail?orderId=ord_0000AyzVBdRlvQBWj8u2xE&pnr=12AB4A&provider=duffel
+GET /v2/flight/order/detail?orderId=ord_0000AyzVBdRlvQBWj8u2xE&pnr=12AB4A&provider=duffel
 ```
 
 ---
