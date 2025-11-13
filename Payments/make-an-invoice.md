@@ -54,4 +54,6 @@ This contains the info for the froned to prcoess/initiate a payment sequence. Th
 have to parse the data and depending on the provider you will have to find the needed value.
 
 For example, in stripe you need the "client_secret". You can find it from here: "client_secret":"pi_3ST4YA3e5ppadNSy0KPckdMs_secret_sTgPM9YjeZ6zaqNZmiNfZLtda"
+
+Please notice: amount: 2050 - dont worry stripe handle amount with the lowest unit, in this case this is value in cents. So, 20.50$ is 2050 cents. Different providers may handle this differently.
 ```
