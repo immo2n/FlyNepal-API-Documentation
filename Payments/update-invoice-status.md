@@ -11,6 +11,11 @@ PUT: /v1/invoice/status
 }
 ```
 
+```txt
+Available status are: pending, paid, failed, cancelled
+[Case sensitive]
+```
+
 ### Responses
 Successfully
 ```json
