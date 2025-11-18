@@ -3,9 +3,9 @@
 ## Endpoint
 
 ```
-GET /v2/flight/bookings
+GET /v2/flight/bookings?page=0&size=10&provider=duffel&status=cancelled
 ```
-
+[N.B. Here pagination, provider and status params are optional]
 ---
 
 ## Description
