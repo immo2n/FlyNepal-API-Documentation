@@ -27,6 +27,10 @@ GET: /v1/hotel/search
 
 - Send auth bearer token, for testing the API might accept without bearer. But when in production it will be set indefinately.
 
+- Radius is in KM by default. Its basically a geofencing method. In the frontend you will have to make a geofence so user can select that. You can check the sample image.
+
+- Radius can be 0 KM to any, there is no limit specified by the doc, so safe is not set 5KM as max. The larger the radius, the longer it takes to search and bigger the response is. You must add a slider to expand or collapse the radius. Dont add any lower limit just, dont allow 0.
+
 ### Response of the search api
 ```json
 {
