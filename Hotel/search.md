@@ -1,25 +1,28 @@
 ### Endpoint
+
 ```
 GET: /v1/hotel/search
 ```
 
 ### Payload
+
 ```json
 {
-    "checkInDate": "2025-12-04",
-    "checkOutDate": "2025-12-07",
-    "longitude": -0.1416,
-    "latitude": 51.5071,
-    "radius": 2,
-    "rooms": 1,
-    "guests": [
-        {
-            "type": "adult"
-        },
-        {
-            "type": "child", "age": 15
-        }
-    ]
+  "checkInDate": "2025-12-04",
+  "checkOutDate": "2025-12-07",
+  "longitude": -0.1416,
+  "latitude": 51.5071,
+  "radius": 2,
+  "rooms": 1,
+  "guests": [
+    {
+      "type": "adult"
+    },
+    {
+      "type": "child",
+      "age": 15
+    }
+  ]
 }
 ```
 
@@ -32,6 +35,7 @@ GET: /v1/hotel/search
 - Radius can be 0 KM to any, there is no limit specified by the doc, so safe is not set 5KM as max. The larger the radius, the longer it takes to search and bigger the response is. You must add a slider to expand or collapse the radius. Dont add any lower limit just, dont allow 0.
 
 ### Response of the search api
+
 ```json
 {
     "count": 68,
@@ -280,7 +284,263 @@ GET: /v1/hotel/search
                         "type": "accessibility_mobility"
                     }
                 ],
-                "rooms": [],
+                "rooms": [
+                    {
+                        "name": "Double Suite",
+                        "beds": [
+                        {
+                            "type": "king",
+                            "count": 2
+                        }
+                        ],
+                        "photos": [
+                        {
+                            "url": "https://assets.duffel.com/img/stays/room1-main.jpg"
+                        },
+                        {
+                            "url": "https://assets.duffel.com/img/stays/room1-bathroom.jpg"
+                        }
+                        ],
+                        "rates": [
+                        {
+                            "id": "rat_0000BTVRuKZTavzrZDJ4cb",
+                            "total_currency": "GBP",
+                            "total_amount": "799.00",
+                            "tax_currency": "GBP",
+                            "tax_amount": "82.23",
+                            "supported_loyalty_programme": "duffel_hotel_group_rewards",
+                            "quantity_available": 12,
+                            "public_currency": "GBP",
+                            "public_amount": "899.00",
+                            "payment_type": "pay_now",
+                            "negotiated_rate_id": "nre_0000ATOwpuYnZohiSmlmyz",
+                            "loyalty_programme_required": false,
+                            "fee_currency": "GBP",
+                            "fee_amount": "50.94",
+                            "estimated_commission_currency": "GBP",
+                            "estimated_commission_amount": "100.00",
+                            "due_at_accommodation_currency": "GBP",
+                            "due_at_accommodation_amount": "39.95",
+                            "deal_types": [
+                            "closed_user_group",
+                            "corporate",
+                            "mobile"
+                            ],
+                            "conditions": [
+                            {
+                                "title": "Parking",
+                                "description": "Public parking is available nearby for £15 per day"
+                            },
+                            {
+                                "title": "Breakfast",
+                                "description": "Continental breakfast included"
+                            }
+                            ],
+                            "code": "ABC",
+                            "cancellation_timeline": [
+                            {
+                                "refund_amount": "799.00",
+                                "currency": "GBP",
+                                "before": "2023-05-23T13:00:00Z"
+                            },
+                            {
+                                "refund_amount": "399.50",
+                                "currency": "GBP",
+                                "before": "2023-05-24T10:00:00Z"
+                            }
+                            ],
+                            "board_type": "room_only",
+                            "base_currency": "GBP",
+                            "base_amount": "665.83",
+                            "available_payment_methods": [
+                            ["balance"],
+                            ["card", "balance"]
+                            ]
+                        },
+                        {
+                            "id": "rat_0000BTVRuKZTavzrZDJ4cc",
+                            "total_currency": "GBP",
+                            "total_amount": "899.00",
+                            "tax_currency": "GBP",
+                            "tax_amount": "92.50",
+                            "supported_loyalty_programme": null,
+                            "quantity_available": 5,
+                            "public_currency": "GBP",
+                            "public_amount": "999.00",
+                            "payment_type": "pay_later",
+                            "negotiated_rate_id": null,
+                            "loyalty_programme_required": false,
+                            "fee_currency": "GBP",
+                            "fee_amount": "60.00",
+                            "estimated_commission_currency": "GBP",
+                            "estimated_commission_amount": "120.00",
+                            "due_at_accommodation_currency": "GBP",
+                            "due_at_accommodation_amount": "0.00",
+                            "deal_types": [
+                            "standard"
+                            ],
+                            "conditions": [
+                            {
+                                "title": "Non-refundable",
+                                "description": "This rate is non-refundable once booked"
+                            }
+                            ],
+                            "code": "NONREF",
+                            "cancellation_timeline": [],
+                            "board_type": "breakfast",
+                            "base_currency": "GBP",
+                            "base_amount": "746.50",
+                            "available_payment_methods": [
+                            ["card"]
+                            ]
+                        }
+                        ]
+                    },
+                    {
+                        "name": "Deluxe King Room",
+                        "beds": [
+                        {
+                            "type": "king",
+                            "count": 1
+                        },
+                        {
+                            "type": "sofa",
+                            "count": 1
+                        }
+                        ],
+                        "photos": [
+                        {
+                            "url": "https://assets.duffel.com/img/stays/room2-main.jpg"
+                        },
+                        {
+                            "url": "https://assets.duffel.com/img/stays/room2-view.jpg"
+                        }
+                        ],
+                        "rates": [
+                        {
+                            "id": "rat_0000BTVRuKZTavzrZDJ4cd",
+                            "total_currency": "GBP",
+                            "total_amount": "599.00",
+                            "tax_currency": "GBP",
+                            "tax_amount": "61.50",
+                            "supported_loyalty_programme": null,
+                            "quantity_available": 8,
+                            "public_currency": "GBP",
+                            "public_amount": "699.00",
+                            "payment_type": "pay_now",
+                            "negotiated_rate_id": null,
+                            "loyalty_programme_required": false,
+                            "fee_currency": "GBP",
+                            "fee_amount": "40.00",
+                            "estimated_commission_currency": "GBP",
+                            "estimated_commission_amount": "80.00",
+                            "due_at_accommodation_currency": "GBP",
+                            "due_at_accommodation_amount": "29.95",
+                            "deal_types": [
+                            "early_booking",
+                            "mobile"
+                            ],
+                            "conditions": [
+                            {
+                                "title": "Free WiFi",
+                                "description": "Complimentary high-speed WiFi included"
+                            }
+                            ],
+                            "code": "EARLY",
+                            "cancellation_timeline": [
+                            {
+                                "refund_amount": "599.00",
+                                "currency": "GBP",
+                                "before": "2023-05-22T12:00:00Z"
+                            }
+                            ],
+                            "board_type": "room_only",
+                            "base_currency": "GBP",
+                            "base_amount": "497.50",
+                            "available_payment_methods": [
+                            ["card", "balance"]
+                            ]
+                        }
+                        ]
+                    },
+                    {
+                        "name": "Family Suite",
+                        "beds": [
+                        {
+                            "type": "queen",
+                            "count": 1
+                        },
+                        {
+                            "type": "twin",
+                            "count": 2
+                        }
+                        ],
+                        "photos": [
+                        {
+                            "url": "https://assets.duffel.com/img/stays/room3-main.jpg"
+                        },
+                        {
+                            "url": "https://assets.duffel.com/img/stays/room3-kids-area.jpg"
+                        }
+                        ],
+                        "rates": [
+                        {
+                            "id": "rat_0000BTVRuKZTavzrZDJ4ce",
+                            "total_currency": "GBP",
+                            "total_amount": "1199.00",
+                            "tax_currency": "GBP",
+                            "tax_amount": "123.50",
+                            "supported_loyalty_programme": "duffel_hotel_group_rewards",
+                            "quantity_available": 3,
+                            "public_currency": "GBP",
+                            "public_amount": "1399.00",
+                            "payment_type": "pay_later",
+                            "negotiated_rate_id": "nre_0000ATOwpuYnZohiSmlmyz",
+                            "loyalty_programme_required": true,
+                            "fee_currency": "GBP",
+                            "fee_amount": "100.00",
+                            "estimated_commission_currency": "GBP",
+                            "estimated_commission_amount": "200.00",
+                            "due_at_accommodation_currency": "GBP",
+                            "due_at_accommodation_amount": "0.00",
+                            "deal_types": [
+                            "corporate",
+                            "loyalty"
+                            ],
+                            "conditions": [
+                            {
+                                "title": "Family Friendly",
+                                "description": "Extra beds and cribs available upon request"
+                            },
+                            {
+                                "title": "Kitchenette",
+                                "description": "Room includes a small kitchenette with microwave and refrigerator"
+                            }
+                            ],
+                            "code": "FAMILY",
+                            "cancellation_timeline": [
+                            {
+                                "refund_amount": "1199.00",
+                                "currency": "GBP",
+                                "before": "2023-05-20T10:00:00Z"
+                            },
+                            {
+                                "refund_amount": "599.50",
+                                "currency": "GBP",
+                                "before": "2023-05-23T10:00:00Z"
+                            }
+                            ],
+                            "board_type": "half_board",
+                            "base_currency": "GBP",
+                            "base_amount": "975.50",
+                            "available_payment_methods": [
+                            ["balance"],
+                            ["card"]
+                            ]
+                        }
+                        ]
+                    }
+                    ],
                 "brand": null,
                 "phone_number": "44-207-3000041",
                 "chain": null,
