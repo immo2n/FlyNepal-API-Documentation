@@ -76,10 +76,8 @@ This endpoint allows you to **hold** a flight booking with passenger details and
     "paymentDetail": {
         "paymentType": "CC",
         "creditCardDetails": {
-            "cardType": "MI",
-            "cardNumber": "5111-1111-1111-1118",
+            "cardId": 8,
             "cvv": "123",
-            "expiryDate": "12/27"
         }
     }
 }
